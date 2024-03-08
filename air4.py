@@ -38,6 +38,6 @@ for column in columns_to_handle_zeros:
     data[column].replace(0, data[column].mean(), inplace=True)
 
 # Convert 'DATETIMEDATA' back to datetime format
-data['DATETIMEDATA'] = pd.to_datetime(data['DATETIMEDATA'], unit='s')
+
 
 print(data)
