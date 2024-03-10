@@ -2,7 +2,7 @@ import requests
 from pprint import pformat
 import pandas as pd
 
-station_id = "89t"
+station_id = "9ttt"
 # Nakhon Si Thammarat
 param = "PM25,PM10,O3,CO,NO2,SO2,WS,TEMP,RH,WD"
 data_type = "hr"
