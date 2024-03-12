@@ -2,7 +2,7 @@ import requests
 from pprint import pformat
 import pandas as pd
 
-station_id = "9ttt"
+station_id = "89t"
 # Nakhon Si Thammarat
 param = "PM25,PM10,O3,CO,NO2,SO2,WS,TEMP,RH,WD"
 data_type = "hr"
@@ -16,4 +16,4 @@ response_json = response.json()
 
 pd_from_dict = pd.DataFrame.from_dict(response_json["stations"][0]["data"])
 print(pformat(pd_from_dict))
-pd_from_dict.to_csv(f"nst.csv")
+pd_from_dict.to_csv(f"nst.csv") 
