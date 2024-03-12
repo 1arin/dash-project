@@ -15,9 +15,7 @@ external_stylesheets = [
         "family=Lato:wght@400;700&display=swap",
         "rel": "stylesheet",
     },
-    '/assets/style.css',
 ]
-
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 app.title = "Avocado Analytics: Understand Your Avocados!"
