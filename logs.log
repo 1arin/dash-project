@@ -6310,3 +6310,17 @@ Alternately, you can install this by running `pip install pycaret[models]`
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2024-03-13 11:26:34,845:WARNING:
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-13 11:46:53,187:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-13 11:46:53,187:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-13 11:46:53,187:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-13 11:46:53,187:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-13 11:46:55,356:INFO:Initializing load_model()
+2024-03-13 11:46:55,356:INFO:load_model(model_name=model_lightgbm_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-13 11:48:46,264:INFO:Initializing load_model()
+2024-03-13 11:48:46,264:INFO:load_model(model_name=model_lightgbm_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-13 12:49:56,459:INFO:Initializing load_model()
+2024-03-13 12:49:56,459:INFO:load_model(model_name=model_lightgbm_pipeline, platform=None, authentication=None, verbose=True)
