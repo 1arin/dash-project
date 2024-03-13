@@ -5,6 +5,7 @@ from dash import html
 import pandas as pd
 import numpy as np
 from dash.dependencies import Output, Input
+
 from pycaret.regression import predict_model, load_model
 
 data = pd.read_csv("clean_data.csv")
@@ -23,13 +24,13 @@ external_stylesheets = [
 ]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-app.title = "nong"
+app.title = "PM 2.5 Forecasting"
 
 app.layout = html.Div(
     children=[
         html.Div(
             children=[
-                html.P(children="🏳️‍🌈", className="header-emoji"),
+                html.P(children="💨", className="header-emoji"),
                 html.H1(
                     children="Air4thai Nakorn-Sri", className="header-title"
                 ),
