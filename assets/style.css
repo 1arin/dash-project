@@ -1,9 +1,11 @@
+/* Reset and global styles */
 body {
     font-family: "Lato", sans-serif;
     margin: 0;
     background-color: #F7F7F7;
 }
 
+/* Header styles */
 .header {
     background-color: #222222;
     height: 288px;
@@ -26,11 +28,11 @@ body {
 
 .header-description {
     color: #CFCFCF;
-    margin: 4px auto;
-    text-align: center;
     max-width: 384px;
+    margin: 0 auto;
 }
- 
+
+/* Wrapper styles */
 .wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -40,11 +42,13 @@ body {
     margin-top: 32px;
 }
 
+/* Card styles */
 .card {
     margin-bottom: 24px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
 }
 
+/* Menu styles */
 .menu {
     height: 112px;
     width: 912px;
@@ -56,6 +60,13 @@ body {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
 }
 
+.menu-title {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #079A82;
+}
+
+/* Dropdown styles */
 .Select-control {
     width: 256px;
     height: 48px;
@@ -69,8 +80,12 @@ body {
     line-height: 32px;
 }
 
-.menu-title {
-    margin-bottom: 6px;
-    font-weight: bold;
-    color: #079A82;
+/* Header table styles */
+.header-table {
+    display: flex;
+    justify-content: center;
+}
+
+.colored-background {
+   background-color: #CFCFCF;
 }
