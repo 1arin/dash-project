@@ -1,13 +1,17 @@
-from dash import Dash
+from dash import Dash 
 from dash import dcc
 from dash import html
+from dash import dash_table
 import pandas as pd
 import numpy as np
 from dash.dependencies import Output, Input
 
-data = pd.read_csv("avocado.csv")
-data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
-data.sort_values("Date", inplace=True)
+data = pd.read_csv("clean_data.csv")
+data["DATETIMEDATA"] = pd.to_datetime(data["DATETIMEDATA"], format="%Y-%m-%d %H:%M:%S")
+data.sort_values("DATETIMEDATA", inplace=True)
+order = ['PM25','PM10','O3','CO','NO2','SO2','WS','TEMP','RH','WD']
+
+PAGE_SIZE = 5
 
 external_stylesheets = [
     {
@@ -18,20 +22,18 @@ external_stylesheets = [
 ]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-app.title = "Avocado Analytics: Understand Your Avocados!"
+app.title = "Analysis and Prediction"
 
 app.layout = html.Div(
     children=[
         html.Div(
             children=[
-                html.P(children="🥑", className="header-emoji"),
+                html.P(children="🏳️‍🌈", className="header-emoji"),
                 html.H1(
-                    children="Avocado Analytics", className="header-title"
+                    children="Air4thai Nakorn-Sri", className="header-title"
                 ),
                 html.P(
-                    children="Analyze the behavior of avocado prices"
-                    " and the number of avocados sold in the US"
-                    " between 2015 and 2018",
+                    children="Analysis and Prediction from Air4thai",
                     className="header-description",
                 ),
             ],
@@ -41,34 +43,19 @@ app.layout = html.Div(
             children=[
                 html.Div(
                     children=[
-                        html.Div(children="Region", className="menu-title"),
+                        html.Div(children="Parameter", className="menu-title"),
                         dcc.Dropdown(
-                            id="region-filter",
+                            id="parameter-filter",
                             options=[
-                                {"label": region, "value": region}
-                                for region in np.sort(data.region.unique())
+                                {"label": param, "value": param}
+                                for param in ['PM25','PM10','O3','CO','NO2','SO2','WS','TEMP','RH','WD']
                             ],
-                            value="Albany",
-                            clearable=False,
-                            className="dropdown",
-                        ),
-                    ]
-                ),
-                html.Div(
-                    children=[
-                        html.Div(children="Type", className="menu-title"),
-                        dcc.Dropdown(
-                            id="type-filter",
-                            options=[
-                                {"label": avocado_type, "value": avocado_type}
-                                for avocado_type in data.type.unique()
-                            ],
-                            value="organic",
+                            value="PM25",
                             clearable=False,
                             searchable=False,
                             className="dropdown",
                         ),
-                    ],
+                    ]
                 ),
                 html.Div(
                     children=[
@@ -78,10 +65,11 @@ app.layout = html.Div(
                             ),
                         dcc.DatePickerRange(
                             id="date-range",
-                            min_date_allowed=data.Date.min().date(),
-                            max_date_allowed=data.Date.max().date(),
-                            start_date=data.Date.min().date(),
-                            end_date=data.Date.max().date(),
+                            min_date_allowed=data["DATETIMEDATA"].min().date(),
+                            max_date_allowed=data["DATETIMEDATA"].max().date(),
+                            start_date=data["DATETIMEDATA"].min().date(),
+                            end_date=data["DATETIMEDATA"].max().date(),
+                            display_format='YYYY-MM-DD',
                         ),
                     ]
                 ),
@@ -92,14 +80,28 @@ app.layout = html.Div(
             children=[
                 html.Div(
                     children=dcc.Graph(
-                        id="price-chart", config={"displayModeBar": False},
+                        id="all-chart", config={"displayModeBar": False},
                     ),
                     className="card",
                 ),
                 html.Div(
-                    children=dcc.Graph(
-                        id="volume-chart", config={"displayModeBar": False},
-                    ),
+                    children=[
+                        html.H3(children="Data Analysis", className="header-table colored-background"), 
+                        dash_table.DataTable(
+                            id="analysis",
+                            columns=[{"name": i, "id": i} for i in order],
+                            page_current=0,
+                            page_size=PAGE_SIZE,
+                            page_action="custom",
+                            style_cell={"textAlign": "center"},
+                            style_header={"backgroundColor": " rgb(174, 180, 196)"},
+                            style_cell_conditional=[
+                                {"if": {"column_id": c}, "textAlign": "center"}
+                                for c in order
+                            ],
+                            style_as_list_view=True,
+                        ),
+                    ],
                     className="card",
                 ),
             ],
@@ -110,59 +112,49 @@ app.layout = html.Div(
 
 
 @app.callback(
-    [Output("price-chart", "figure"), Output("volume-chart", "figure")],
+    Output("all-chart", "figure"),
     [
-        Input("region-filter", "value"),
-        Input("type-filter", "value"),
+        Input("parameter-filter", "value"),
         Input("date-range", "start_date"),
         Input("date-range", "end_date"),
     ],
 )
-def update_charts(region, avocado_type, start_date, end_date):
-    mask = (
-        (data.region == region)
-        & (data.type == avocado_type)
-        & (data.Date >= start_date)
-        & (data.Date <= end_date)
-    )
+def update_chart(parameter, start_date, end_date):
+    mask = (data["DATETIMEDATA"] >= start_date) & (data["DATETIMEDATA"] <= end_date)
     filtered_data = data.loc[mask, :]
-    price_chart_figure = {
+    all_figure = {
         "data": [
             {
-                "x": filtered_data["Date"],
-                "y": filtered_data["AveragePrice"],
+                "x": filtered_data["DATETIMEDATA"],
+                "y": filtered_data[parameter],
                 "type": "lines",
-                "hovertemplate": "$%{y:.2f}<extra></extra>",
+                "hovertemplate": f"{parameter}: %{{y:.2f}}<extra></extra>",
             },
         ],
         "layout": {
             "title": {
-                "text": "Average Price of Avocados",
+                "text": f"{parameter}",
                 "x": 0.05,
                 "xanchor": "left",
             },
-            "xaxis": {"fixedrange": True},
-            "yaxis": {"tickprefix": "$", "fixedrange": True},
-            "colorway": ["#17B897"],
+            "xaxis": {"title": "Datetime", "fixedrange": True},
+            "yaxis": {"title": parameter, "fixedrange": True},
+            "colorway": ["#b8c9b4"],
         },
     }
+    return all_figure
 
-    volume_chart_figure = {
-        "data": [
-            {
-                "x": filtered_data["Date"],
-                "y": filtered_data["Total Volume"],
-                "type": "lines",
-            },
-        ],
-        "layout": {
-            "title": {"text": "Avocados Sold", "x": 0.05, "xanchor": "left"},
-            "xaxis": {"fixedrange": True},
-            "yaxis": {"fixedrange": True},
-            "colorway": ["#E12D39"],
-        },
-    }
-    return price_chart_figure, volume_chart_figure
+@app.callback(
+    Output("analysis", "data"),
+    [Input('analysis', "page_current"),
+     Input('analysis', "page_size")]
+)
+def update_table(analysis_page_current, analysis_page_size):
+    analysis_data = (data[order]
+                     .iloc[analysis_page_current * analysis_page_size: 
+                           (analysis_page_current + 1) * analysis_page_size]
+                            .to_dict('records'))
+    return analysis_data
 
 
 if __name__ == "__main__":
