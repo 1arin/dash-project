@@ -3,12 +3,12 @@ body {
     font-family: 'Hagrid Trial', sans-serif;
     font-family: 'Hagrid Text Trial', sans-serif;
     margin: 0;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 }
 
 /* Header styles */
 .header {
-    background-color: #222222;
+    background-color: #343F56;
     height: 288px;
     padding: 16px 0 0 0;
     text-align: center;
@@ -21,7 +21,7 @@ body {
 }
 
 .header-title {
-    color: #FFFFFF;
+    color: #F5E6CA;
     font-size: 48px;
     font-weight: bold;
     text-align: center;
@@ -29,7 +29,7 @@ body {
 }
 
 .header-description {
-    color: #CFCFCF;
+    color: #F5E6CA;
     max-width: 384px;
     margin: 0 auto;
 }
@@ -58,20 +58,21 @@ body {
     justify-content: space-evenly;
     padding-top: 24px;
     margin: -80px auto 0 auto;
-    background-color: #FFFFFF;
+    background-color: #FFFBF4;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
 }
 
 .menu-title {
     margin-bottom: 6px;
     font-weight: bold;
-    color: #079A82;
+    color: #343F56;
 }
 
 /* Dropdown styles */
 .Select-control {
     width: 256px;
     height: 48px;
+    font: #343F56;
 }
 
 .Select--single > .Select-control .Select-value, .Select-placeholder {
@@ -84,10 +85,12 @@ body {
 
 /* Header table styles */
 .header-table {
+    color: #F5E6CA;
     display: flex;
     justify-content: center;
 }
 
 .colored-background {
-   background-color: #CFCFCF;
+   background-color: #343F56;
+   color: #F5E6CA;
 }
