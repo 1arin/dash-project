@@ -3,9 +3,7 @@ from dash import dash_table
 from dash import dcc
 from dash import html
 import pandas as pd
-import numpy as np
 from dash.dependencies import Output, Input
-
 from pycaret.regression import predict_model, load_model
 
 data = pd.read_csv("clean_data.csv")
@@ -76,6 +74,22 @@ app.layout = html.Div(
                         ),
                     ]
                 ),
+                html.Div(
+                    children=[
+                        html.Div(children="Location", className="menu-title"),
+                        dcc.Dropdown(
+                            id="location",
+                            options=[
+                                {"label": Location, "value": Location}
+                                for Location in ['NST']
+                            ],
+                            value="NST",
+                            clearable=False,
+                            searchable=False,
+                            className="dropdown",
+                    ),
+                ]
+            ),
             ],
             className="menu",
         ),
@@ -194,7 +208,7 @@ def update_chart(parameter, start_date, end_date):
             },
             "xaxis": {"title": "Datetime", "fixedrange": True},
             "yaxis": {"title": parameter, "fixedrange": True},
-            "colorway": ["#b8c9b4"],
+            "colorway": ["#B5C0D0"],
         },
     }
     return all_figure
@@ -225,6 +239,7 @@ def update_chart(n_intervals):
     start_date = now.date()
     end_date = start_date + pd.DateOffset(days=7)
 
+    # model pm 25
     loaded_model_PM25 = load_model('PM25_catboost_pipeline')
 
     future_dates_PM25 = pd.date_range(start=start_date, end=end_date, freq='D')
@@ -266,6 +281,8 @@ def update_chart(n_intervals):
         },
     }
 
+
+    # model WD
     loaded_model_WD = load_model('WD_catboost_pipeline')
 
     future_dates_WD = pd.date_range(start=start_date, end=end_date, freq='D')
@@ -312,6 +329,7 @@ def update_chart(n_intervals):
 
     return PM_chart,WD_chart
 
+# call back part
 @app.callback(
     Output("prediction_pm", "data"),
     Output("prediction_wd", "data"),

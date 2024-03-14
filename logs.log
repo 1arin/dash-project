@@ -10994,3 +10994,2498 @@ pickle: {'deps_info': {'pip': '24.0', 'setuptools': '65.5.0', 'pycaret': '3.3.0'
 2024-03-14 07:10:13,669:INFO:Preloading libraries
 2024-03-14 07:10:13,670:INFO:Set up data.
 2024-03-14 07:10:13,672:INFO:Set up index.
+2024-03-14 07:13:01,551:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:13:01,551:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:13:01,551:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:13:01,551:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:13:01,874:INFO:Initializing load_model()
+2024-03-14 07:13:01,875:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:13:02,373:INFO:Initializing predict_model()
+2024-03-14 07:13:02,373:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001D56F898D50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001D56EFA8210>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001D56F6D45E0>)
+2024-03-14 07:13:02,373:INFO:Checking exceptions
+2024-03-14 07:13:02,373:INFO:Preloading libraries
+2024-03-14 07:13:02,373:INFO:Set up data.
+2024-03-14 07:13:02,375:INFO:Set up index.
+2024-03-14 07:13:02,481:INFO:Initializing load_model()
+2024-03-14 07:13:02,481:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:13:02,498:INFO:Initializing predict_model()
+2024-03-14 07:13:02,498:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001D57278DB90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001D572785650>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001D572318C20>)
+2024-03-14 07:13:02,498:INFO:Checking exceptions
+2024-03-14 07:13:02,498:INFO:Preloading libraries
+2024-03-14 07:13:02,498:INFO:Set up data.
+2024-03-14 07:13:02,501:INFO:Set up index.
+2024-03-14 07:14:56,311:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:14:56,312:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:14:56,312:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:14:56,312:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:14:56,589:INFO:Initializing load_model()
+2024-03-14 07:14:56,589:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:14:57,121:INFO:Initializing predict_model()
+2024-03-14 07:14:57,122:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000157C05FC6D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000157C0856A50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000157C05D0400>)
+2024-03-14 07:14:57,122:INFO:Checking exceptions
+2024-03-14 07:14:57,122:INFO:Preloading libraries
+2024-03-14 07:14:57,122:INFO:Set up data.
+2024-03-14 07:14:57,124:INFO:Set up index.
+2024-03-14 07:14:57,236:INFO:Initializing load_model()
+2024-03-14 07:14:57,236:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:14:57,257:INFO:Initializing predict_model()
+2024-03-14 07:14:57,257:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000157C3889D50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000157C3884D50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000157C3470540>)
+2024-03-14 07:14:57,258:INFO:Checking exceptions
+2024-03-14 07:14:57,258:INFO:Preloading libraries
+2024-03-14 07:14:57,258:INFO:Set up data.
+2024-03-14 07:14:57,261:INFO:Set up index.
+2024-03-14 07:16:49,823:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:16:49,823:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:16:49,823:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:16:49,823:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:16:50,135:INFO:Initializing load_model()
+2024-03-14 07:16:50,138:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:16:50,691:INFO:Initializing predict_model()
+2024-03-14 07:16:50,691:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000202F2FAE1D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000202F2FB47D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000202F6802F20>)
+2024-03-14 07:16:50,691:INFO:Checking exceptions
+2024-03-14 07:16:50,691:INFO:Preloading libraries
+2024-03-14 07:16:50,691:INFO:Set up data.
+2024-03-14 07:16:50,694:INFO:Set up index.
+2024-03-14 07:16:50,788:INFO:Initializing load_model()
+2024-03-14 07:16:50,789:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:16:50,804:INFO:Initializing predict_model()
+2024-03-14 07:16:50,804:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000202F6790410>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000202F679B510>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000202F6304680>)
+2024-03-14 07:16:50,804:INFO:Checking exceptions
+2024-03-14 07:16:50,804:INFO:Preloading libraries
+2024-03-14 07:16:50,804:INFO:Set up data.
+2024-03-14 07:16:50,806:INFO:Set up index.
+2024-03-14 07:18:21,415:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:18:21,415:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:18:21,415:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:18:21,415:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:18:21,716:INFO:Initializing load_model()
+2024-03-14 07:18:21,717:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:18:22,264:INFO:Initializing predict_model()
+2024-03-14 07:18:22,264:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C32CB22050>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C32CA3D790>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C32C63F7E0>)
+2024-03-14 07:18:22,264:INFO:Checking exceptions
+2024-03-14 07:18:22,265:INFO:Preloading libraries
+2024-03-14 07:18:22,265:INFO:Set up data.
+2024-03-14 07:18:22,267:INFO:Set up index.
+2024-03-14 07:18:22,359:INFO:Initializing load_model()
+2024-03-14 07:18:22,359:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:18:22,374:INFO:Initializing predict_model()
+2024-03-14 07:18:22,374:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C32F96FBD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C32F985A50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C32F54CCC0>)
+2024-03-14 07:18:22,374:INFO:Checking exceptions
+2024-03-14 07:18:22,374:INFO:Preloading libraries
+2024-03-14 07:18:22,374:INFO:Set up data.
+2024-03-14 07:18:22,376:INFO:Set up index.
+2024-03-14 07:19:48,994:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:19:48,995:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:19:48,995:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:19:48,995:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:19:49,299:INFO:Initializing load_model()
+2024-03-14 07:19:49,300:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:19:49,812:INFO:Initializing predict_model()
+2024-03-14 07:19:49,812:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3474090>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3864790>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CEFC0>)
+2024-03-14 07:19:49,812:INFO:Checking exceptions
+2024-03-14 07:19:49,812:INFO:Preloading libraries
+2024-03-14 07:19:49,812:INFO:Set up data.
+2024-03-14 07:19:49,814:INFO:Set up index.
+2024-03-14 07:19:49,918:INFO:Initializing load_model()
+2024-03-14 07:19:49,918:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:19:49,935:INFO:Initializing predict_model()
+2024-03-14 07:19:49,935:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D688F550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D689AF50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6648CC0>)
+2024-03-14 07:19:49,935:INFO:Checking exceptions
+2024-03-14 07:19:49,935:INFO:Preloading libraries
+2024-03-14 07:19:49,935:INFO:Set up data.
+2024-03-14 07:19:49,937:INFO:Set up index.
+2024-03-14 07:20:01,262:INFO:Initializing load_model()
+2024-03-14 07:20:01,263:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:20:01,325:INFO:Initializing predict_model()
+2024-03-14 07:20:01,326:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D689A850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6898510>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6962E80>)
+2024-03-14 07:20:01,326:INFO:Checking exceptions
+2024-03-14 07:20:01,326:INFO:Preloading libraries
+2024-03-14 07:20:01,326:INFO:Set up data.
+2024-03-14 07:20:01,329:INFO:Set up index.
+2024-03-14 07:20:01,483:INFO:Initializing load_model()
+2024-03-14 07:20:01,483:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:20:01,513:INFO:Initializing predict_model()
+2024-03-14 07:20:01,513:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D6892990>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6899510>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D696E700>)
+2024-03-14 07:20:01,513:INFO:Checking exceptions
+2024-03-14 07:20:01,514:INFO:Preloading libraries
+2024-03-14 07:20:01,514:INFO:Set up data.
+2024-03-14 07:20:01,518:INFO:Set up index.
+2024-03-14 07:21:21,048:INFO:Initializing load_model()
+2024-03-14 07:21:21,052:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:21:21,121:INFO:Initializing predict_model()
+2024-03-14 07:21:21,121:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D6886F90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6886650>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69607C0>)
+2024-03-14 07:21:21,122:INFO:Checking exceptions
+2024-03-14 07:21:21,122:INFO:Preloading libraries
+2024-03-14 07:21:21,122:INFO:Set up data.
+2024-03-14 07:21:21,124:INFO:Set up index.
+2024-03-14 07:21:21,232:INFO:Initializing load_model()
+2024-03-14 07:21:21,232:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:21:21,248:INFO:Initializing predict_model()
+2024-03-14 07:21:21,248:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D38D6F10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6872C10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6648CC0>)
+2024-03-14 07:21:21,249:INFO:Checking exceptions
+2024-03-14 07:21:21,249:INFO:Preloading libraries
+2024-03-14 07:21:21,249:INFO:Set up data.
+2024-03-14 07:21:21,251:INFO:Set up index.
+2024-03-14 07:21:55,054:INFO:Initializing load_model()
+2024-03-14 07:21:55,056:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:21:55,106:INFO:Initializing predict_model()
+2024-03-14 07:21:55,106:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D6934DD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6203990>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69B9580>)
+2024-03-14 07:21:55,106:INFO:Checking exceptions
+2024-03-14 07:21:55,106:INFO:Preloading libraries
+2024-03-14 07:21:55,106:INFO:Set up data.
+2024-03-14 07:21:55,108:INFO:Set up index.
+2024-03-14 07:21:55,210:INFO:Initializing load_model()
+2024-03-14 07:21:55,210:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:21:55,226:INFO:Initializing predict_model()
+2024-03-14 07:21:55,226:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D348CB90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3952FD0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CF600>)
+2024-03-14 07:21:55,226:INFO:Checking exceptions
+2024-03-14 07:21:55,226:INFO:Preloading libraries
+2024-03-14 07:21:55,226:INFO:Set up data.
+2024-03-14 07:21:55,228:INFO:Set up index.
+2024-03-14 07:22:10,929:INFO:Initializing load_model()
+2024-03-14 07:22:10,929:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:22:10,979:INFO:Initializing predict_model()
+2024-03-14 07:22:10,979:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3A1FE50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6872C90>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6960360>)
+2024-03-14 07:22:10,979:INFO:Checking exceptions
+2024-03-14 07:22:10,979:INFO:Preloading libraries
+2024-03-14 07:22:10,979:INFO:Set up data.
+2024-03-14 07:22:10,982:INFO:Set up index.
+2024-03-14 07:22:11,082:INFO:Initializing load_model()
+2024-03-14 07:22:11,082:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:22:11,105:INFO:Initializing predict_model()
+2024-03-14 07:22:11,105:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3459D10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3831A90>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D691FE20>)
+2024-03-14 07:22:11,105:INFO:Checking exceptions
+2024-03-14 07:22:11,105:INFO:Preloading libraries
+2024-03-14 07:22:11,105:INFO:Set up data.
+2024-03-14 07:22:11,109:INFO:Set up index.
+2024-03-14 07:22:45,735:INFO:Initializing load_model()
+2024-03-14 07:22:45,735:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:22:45,788:INFO:Initializing predict_model()
+2024-03-14 07:22:45,788:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D352BE10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6889C10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69BB380>)
+2024-03-14 07:22:45,788:INFO:Checking exceptions
+2024-03-14 07:22:45,788:INFO:Preloading libraries
+2024-03-14 07:22:45,788:INFO:Set up data.
+2024-03-14 07:22:45,791:INFO:Set up index.
+2024-03-14 07:22:45,894:INFO:Initializing load_model()
+2024-03-14 07:22:45,894:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:22:45,916:INFO:Initializing predict_model()
+2024-03-14 07:22:45,916:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3971B50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3952A10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6962DE0>)
+2024-03-14 07:22:45,916:INFO:Checking exceptions
+2024-03-14 07:22:45,916:INFO:Preloading libraries
+2024-03-14 07:22:45,917:INFO:Set up data.
+2024-03-14 07:22:45,918:INFO:Set up index.
+2024-03-14 07:23:41,856:INFO:Initializing load_model()
+2024-03-14 07:23:41,858:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:23:41,910:INFO:Initializing predict_model()
+2024-03-14 07:23:41,910:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3970F50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6899510>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69B9760>)
+2024-03-14 07:23:41,910:INFO:Checking exceptions
+2024-03-14 07:23:41,910:INFO:Preloading libraries
+2024-03-14 07:23:41,910:INFO:Set up data.
+2024-03-14 07:23:41,912:INFO:Set up index.
+2024-03-14 07:23:42,023:INFO:Initializing load_model()
+2024-03-14 07:23:42,023:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:23:42,040:INFO:Initializing predict_model()
+2024-03-14 07:23:42,040:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D67AAAD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6887250>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D691FB00>)
+2024-03-14 07:23:42,040:INFO:Checking exceptions
+2024-03-14 07:23:42,040:INFO:Preloading libraries
+2024-03-14 07:23:42,041:INFO:Set up data.
+2024-03-14 07:23:42,042:INFO:Set up index.
+2024-03-14 07:24:24,851:INFO:Initializing load_model()
+2024-03-14 07:24:24,851:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:24:24,908:INFO:Initializing predict_model()
+2024-03-14 07:24:24,908:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3A2D290>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D35D1450>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CF600>)
+2024-03-14 07:24:24,908:INFO:Checking exceptions
+2024-03-14 07:24:24,908:INFO:Preloading libraries
+2024-03-14 07:24:24,908:INFO:Set up data.
+2024-03-14 07:24:24,911:INFO:Set up index.
+2024-03-14 07:24:25,015:INFO:Initializing load_model()
+2024-03-14 07:24:25,015:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:24:25,031:INFO:Initializing predict_model()
+2024-03-14 07:24:25,031:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D688D310>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6899390>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69637E0>)
+2024-03-14 07:24:25,031:INFO:Checking exceptions
+2024-03-14 07:24:25,031:INFO:Preloading libraries
+2024-03-14 07:24:25,032:INFO:Set up data.
+2024-03-14 07:24:25,034:INFO:Set up index.
+2024-03-14 07:24:47,528:INFO:Initializing load_model()
+2024-03-14 07:24:47,528:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:24:47,576:INFO:Initializing predict_model()
+2024-03-14 07:24:47,576:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D4B8D550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D354B9D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69BA5C0>)
+2024-03-14 07:24:47,576:INFO:Checking exceptions
+2024-03-14 07:24:47,576:INFO:Preloading libraries
+2024-03-14 07:24:47,576:INFO:Set up data.
+2024-03-14 07:24:47,579:INFO:Set up index.
+2024-03-14 07:24:47,676:INFO:Initializing load_model()
+2024-03-14 07:24:47,676:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:24:47,695:INFO:Initializing predict_model()
+2024-03-14 07:24:47,695:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D6320B10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D69351D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6600540>)
+2024-03-14 07:24:47,695:INFO:Checking exceptions
+2024-03-14 07:24:47,695:INFO:Preloading libraries
+2024-03-14 07:24:47,696:INFO:Set up data.
+2024-03-14 07:24:47,697:INFO:Set up index.
+2024-03-14 07:24:58,153:INFO:Initializing load_model()
+2024-03-14 07:24:58,154:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:24:58,215:INFO:Initializing predict_model()
+2024-03-14 07:24:58,215:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D68846D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D34E1650>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69B84A0>)
+2024-03-14 07:24:58,215:INFO:Checking exceptions
+2024-03-14 07:24:58,215:INFO:Preloading libraries
+2024-03-14 07:24:58,216:INFO:Set up data.
+2024-03-14 07:24:58,218:INFO:Set up index.
+2024-03-14 07:24:58,330:INFO:Initializing load_model()
+2024-03-14 07:24:58,330:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:24:58,347:INFO:Initializing predict_model()
+2024-03-14 07:24:58,347:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D35D3C10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6889310>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D666C9A0>)
+2024-03-14 07:24:58,348:INFO:Checking exceptions
+2024-03-14 07:24:58,348:INFO:Preloading libraries
+2024-03-14 07:24:58,348:INFO:Set up data.
+2024-03-14 07:24:58,350:INFO:Set up index.
+2024-03-14 07:25:12,680:INFO:Initializing load_model()
+2024-03-14 07:25:12,681:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:25:12,750:INFO:Initializing predict_model()
+2024-03-14 07:25:12,750:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D688CCD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6886F90>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CEC00>)
+2024-03-14 07:25:12,750:INFO:Checking exceptions
+2024-03-14 07:25:12,750:INFO:Preloading libraries
+2024-03-14 07:25:12,750:INFO:Set up data.
+2024-03-14 07:25:12,752:INFO:Set up index.
+2024-03-14 07:25:12,851:INFO:Initializing load_model()
+2024-03-14 07:25:12,851:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:25:12,869:INFO:Initializing predict_model()
+2024-03-14 07:25:12,869:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D6949250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3980810>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6648CC0>)
+2024-03-14 07:25:12,869:INFO:Checking exceptions
+2024-03-14 07:25:12,869:INFO:Preloading libraries
+2024-03-14 07:25:12,870:INFO:Set up data.
+2024-03-14 07:25:12,873:INFO:Set up index.
+2024-03-14 07:26:26,896:INFO:Initializing load_model()
+2024-03-14 07:26:26,896:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:26:26,953:INFO:Initializing predict_model()
+2024-03-14 07:26:26,953:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D694B890>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6949950>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6972E80>)
+2024-03-14 07:26:26,953:INFO:Checking exceptions
+2024-03-14 07:26:26,953:INFO:Preloading libraries
+2024-03-14 07:26:26,953:INFO:Set up data.
+2024-03-14 07:26:26,956:INFO:Set up index.
+2024-03-14 07:26:27,064:INFO:Initializing load_model()
+2024-03-14 07:26:27,064:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:26:27,082:INFO:Initializing predict_model()
+2024-03-14 07:26:27,083:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D34AF910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D354AA10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6648CC0>)
+2024-03-14 07:26:27,083:INFO:Checking exceptions
+2024-03-14 07:26:27,083:INFO:Preloading libraries
+2024-03-14 07:26:27,083:INFO:Set up data.
+2024-03-14 07:26:27,085:INFO:Set up index.
+2024-03-14 07:26:37,152:INFO:Initializing load_model()
+2024-03-14 07:26:37,153:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:26:37,201:INFO:Initializing predict_model()
+2024-03-14 07:26:37,201:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3971190>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D38D64D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6962840>)
+2024-03-14 07:26:37,201:INFO:Checking exceptions
+2024-03-14 07:26:37,201:INFO:Preloading libraries
+2024-03-14 07:26:37,202:INFO:Set up data.
+2024-03-14 07:26:37,204:INFO:Set up index.
+2024-03-14 07:26:37,303:INFO:Initializing load_model()
+2024-03-14 07:26:37,303:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:26:37,321:INFO:Initializing predict_model()
+2024-03-14 07:26:37,321:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3971DD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6891A10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D691FD80>)
+2024-03-14 07:26:37,321:INFO:Checking exceptions
+2024-03-14 07:26:37,321:INFO:Preloading libraries
+2024-03-14 07:26:37,322:INFO:Set up data.
+2024-03-14 07:26:37,323:INFO:Set up index.
+2024-03-14 07:26:37,898:INFO:Initializing load_model()
+2024-03-14 07:26:37,899:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:26:37,952:INFO:Initializing predict_model()
+2024-03-14 07:26:37,952:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D34B46D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3953DD0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D666CD60>)
+2024-03-14 07:26:37,952:INFO:Checking exceptions
+2024-03-14 07:26:37,953:INFO:Preloading libraries
+2024-03-14 07:26:37,953:INFO:Set up data.
+2024-03-14 07:26:37,956:INFO:Set up index.
+2024-03-14 07:26:38,056:INFO:Initializing load_model()
+2024-03-14 07:26:38,056:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:26:38,076:INFO:Initializing predict_model()
+2024-03-14 07:26:38,076:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D688BE90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3830FD0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CE340>)
+2024-03-14 07:26:38,076:INFO:Checking exceptions
+2024-03-14 07:26:38,076:INFO:Preloading libraries
+2024-03-14 07:26:38,076:INFO:Set up data.
+2024-03-14 07:26:38,079:INFO:Set up index.
+2024-03-14 07:26:39,490:INFO:Initializing load_model()
+2024-03-14 07:26:39,490:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:26:39,540:INFO:Initializing predict_model()
+2024-03-14 07:26:39,540:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D6880150>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6886350>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CEAC0>)
+2024-03-14 07:26:39,541:INFO:Checking exceptions
+2024-03-14 07:26:39,541:INFO:Preloading libraries
+2024-03-14 07:26:39,541:INFO:Set up data.
+2024-03-14 07:26:39,543:INFO:Set up index.
+2024-03-14 07:26:39,641:INFO:Initializing load_model()
+2024-03-14 07:26:39,641:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:26:39,656:INFO:Initializing predict_model()
+2024-03-14 07:26:39,656:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D34AF910>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6873990>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D691FE20>)
+2024-03-14 07:26:39,656:INFO:Checking exceptions
+2024-03-14 07:26:39,657:INFO:Preloading libraries
+2024-03-14 07:26:39,657:INFO:Set up data.
+2024-03-14 07:26:39,659:INFO:Set up index.
+2024-03-14 07:28:42,084:INFO:Initializing load_model()
+2024-03-14 07:28:42,084:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:28:42,141:INFO:Initializing predict_model()
+2024-03-14 07:28:42,142:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D688EA50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D68A1450>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69642C0>)
+2024-03-14 07:28:42,142:INFO:Checking exceptions
+2024-03-14 07:28:42,142:INFO:Preloading libraries
+2024-03-14 07:28:42,142:INFO:Set up data.
+2024-03-14 07:28:42,145:INFO:Set up index.
+2024-03-14 07:28:42,253:INFO:Initializing load_model()
+2024-03-14 07:28:42,253:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:28:42,273:INFO:Initializing predict_model()
+2024-03-14 07:28:42,273:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D68988D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3973790>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6960360>)
+2024-03-14 07:28:42,273:INFO:Checking exceptions
+2024-03-14 07:28:42,273:INFO:Preloading libraries
+2024-03-14 07:28:42,274:INFO:Set up data.
+2024-03-14 07:28:42,277:INFO:Set up index.
+2024-03-14 07:29:53,684:INFO:Initializing load_model()
+2024-03-14 07:29:53,685:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:29:53,750:INFO:Initializing predict_model()
+2024-03-14 07:29:53,750:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3832810>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D68A0190>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6966CA0>)
+2024-03-14 07:29:53,750:INFO:Checking exceptions
+2024-03-14 07:29:53,750:INFO:Preloading libraries
+2024-03-14 07:29:53,751:INFO:Set up data.
+2024-03-14 07:29:53,753:INFO:Set up index.
+2024-03-14 07:29:53,861:INFO:Initializing load_model()
+2024-03-14 07:29:53,862:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:29:53,879:INFO:Initializing predict_model()
+2024-03-14 07:29:53,879:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D354BE90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6899350>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CF880>)
+2024-03-14 07:29:53,879:INFO:Checking exceptions
+2024-03-14 07:29:53,879:INFO:Preloading libraries
+2024-03-14 07:29:53,879:INFO:Set up data.
+2024-03-14 07:29:53,881:INFO:Set up index.
+2024-03-14 07:30:08,058:INFO:Initializing load_model()
+2024-03-14 07:30:08,058:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:30:08,113:INFO:Initializing predict_model()
+2024-03-14 07:30:08,113:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3971250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3952FD0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6964860>)
+2024-03-14 07:30:08,113:INFO:Checking exceptions
+2024-03-14 07:30:08,113:INFO:Preloading libraries
+2024-03-14 07:30:08,113:INFO:Set up data.
+2024-03-14 07:30:08,116:INFO:Set up index.
+2024-03-14 07:30:08,223:INFO:Initializing load_model()
+2024-03-14 07:30:08,224:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:30:08,239:INFO:Initializing predict_model()
+2024-03-14 07:30:08,239:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3971450>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6937110>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D69631A0>)
+2024-03-14 07:30:08,239:INFO:Checking exceptions
+2024-03-14 07:30:08,239:INFO:Preloading libraries
+2024-03-14 07:30:08,239:INFO:Set up data.
+2024-03-14 07:30:08,241:INFO:Set up index.
+2024-03-14 07:30:40,566:INFO:Initializing load_model()
+2024-03-14 07:30:40,566:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:30:40,617:INFO:Initializing predict_model()
+2024-03-14 07:30:40,617:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D6880210>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6888650>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6967EC0>)
+2024-03-14 07:30:40,617:INFO:Checking exceptions
+2024-03-14 07:30:40,617:INFO:Preloading libraries
+2024-03-14 07:30:40,617:INFO:Set up data.
+2024-03-14 07:30:40,621:INFO:Set up index.
+2024-03-14 07:30:40,724:INFO:Initializing load_model()
+2024-03-14 07:30:40,724:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:30:40,741:INFO:Initializing predict_model()
+2024-03-14 07:30:40,741:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D694B090>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3497310>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CD1C0>)
+2024-03-14 07:30:40,741:INFO:Checking exceptions
+2024-03-14 07:30:40,741:INFO:Preloading libraries
+2024-03-14 07:30:40,741:INFO:Set up data.
+2024-03-14 07:30:40,743:INFO:Set up index.
+2024-03-14 07:32:22,358:INFO:Initializing load_model()
+2024-03-14 07:32:22,358:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:32:22,416:INFO:Initializing predict_model()
+2024-03-14 07:32:22,416:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D38D5D50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3A2D190>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6965800>)
+2024-03-14 07:32:22,416:INFO:Checking exceptions
+2024-03-14 07:32:22,416:INFO:Preloading libraries
+2024-03-14 07:32:22,417:INFO:Set up data.
+2024-03-14 07:32:22,419:INFO:Set up index.
+2024-03-14 07:32:22,522:INFO:Initializing load_model()
+2024-03-14 07:32:22,522:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:32:22,540:INFO:Initializing predict_model()
+2024-03-14 07:32:22,540:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D68A12D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D694B950>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6963EC0>)
+2024-03-14 07:32:22,540:INFO:Checking exceptions
+2024-03-14 07:32:22,540:INFO:Preloading libraries
+2024-03-14 07:32:22,540:INFO:Set up data.
+2024-03-14 07:32:22,543:INFO:Set up index.
+2024-03-14 07:32:34,091:INFO:Initializing load_model()
+2024-03-14 07:32:34,092:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:32:34,138:INFO:Initializing predict_model()
+2024-03-14 07:32:34,138:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D694B350>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D694AB90>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6966200>)
+2024-03-14 07:32:34,138:INFO:Checking exceptions
+2024-03-14 07:32:34,138:INFO:Preloading libraries
+2024-03-14 07:32:34,138:INFO:Set up data.
+2024-03-14 07:32:34,141:INFO:Set up index.
+2024-03-14 07:32:34,239:INFO:Initializing load_model()
+2024-03-14 07:32:34,239:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:32:34,256:INFO:Initializing predict_model()
+2024-03-14 07:32:34,256:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D688BF50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D6917C50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D35CF880>)
+2024-03-14 07:32:34,256:INFO:Checking exceptions
+2024-03-14 07:32:34,256:INFO:Preloading libraries
+2024-03-14 07:32:34,256:INFO:Set up data.
+2024-03-14 07:32:34,258:INFO:Set up index.
+2024-03-14 07:33:02,270:INFO:Initializing load_model()
+2024-03-14 07:33:02,271:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:33:02,324:INFO:Initializing predict_model()
+2024-03-14 07:33:02,325:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3830E90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D3973DD0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6966DE0>)
+2024-03-14 07:33:02,325:INFO:Checking exceptions
+2024-03-14 07:33:02,325:INFO:Preloading libraries
+2024-03-14 07:33:02,325:INFO:Set up data.
+2024-03-14 07:33:02,327:INFO:Set up index.
+2024-03-14 07:33:02,440:INFO:Initializing load_model()
+2024-03-14 07:33:02,440:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:33:02,457:INFO:Initializing predict_model()
+2024-03-14 07:33:02,457:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001C6D3973850>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001C6D38D6590>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C6D6963920>)
+2024-03-14 07:33:02,457:INFO:Checking exceptions
+2024-03-14 07:33:02,458:INFO:Preloading libraries
+2024-03-14 07:33:02,458:INFO:Set up data.
+2024-03-14 07:33:02,460:INFO:Set up index.
+2024-03-14 07:35:58,900:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:35:58,900:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:35:58,900:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:35:58,900:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:35:59,233:INFO:Initializing load_model()
+2024-03-14 07:35:59,233:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:35:59,748:INFO:Initializing predict_model()
+2024-03-14 07:35:59,748:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000252DDCB66D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000252DDDE6610>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000252DDDCF560>)
+2024-03-14 07:35:59,748:INFO:Checking exceptions
+2024-03-14 07:35:59,748:INFO:Preloading libraries
+2024-03-14 07:35:59,748:INFO:Set up data.
+2024-03-14 07:35:59,750:INFO:Set up index.
+2024-03-14 07:35:59,860:INFO:Initializing load_model()
+2024-03-14 07:35:59,860:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:35:59,876:INFO:Initializing predict_model()
+2024-03-14 07:35:59,876:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000252E10711D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000252E10A1E50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000252E0C4CCC0>)
+2024-03-14 07:35:59,876:INFO:Checking exceptions
+2024-03-14 07:35:59,876:INFO:Preloading libraries
+2024-03-14 07:35:59,876:INFO:Set up data.
+2024-03-14 07:35:59,878:INFO:Set up index.
+2024-03-14 07:37:11,052:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:37:11,054:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:37:11,054:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:37:11,054:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:37:14,026:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:37:14,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:37:14,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:37:14,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:37:14,443:INFO:Initializing load_model()
+2024-03-14 07:37:14,443:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:37:14,948:INFO:Initializing predict_model()
+2024-03-14 07:37:14,948:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001CEE404B0D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001CEE40F1A50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001CEE4038900>)
+2024-03-14 07:37:14,948:INFO:Checking exceptions
+2024-03-14 07:37:14,948:INFO:Preloading libraries
+2024-03-14 07:37:14,948:INFO:Set up data.
+2024-03-14 07:37:14,950:INFO:Set up index.
+2024-03-14 07:37:15,063:INFO:Initializing load_model()
+2024-03-14 07:37:15,063:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:37:15,080:INFO:Initializing predict_model()
+2024-03-14 07:37:15,080:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001CEE718F950>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001CEE7195A90>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001CEE6D20F40>)
+2024-03-14 07:37:15,080:INFO:Checking exceptions
+2024-03-14 07:37:15,080:INFO:Preloading libraries
+2024-03-14 07:37:15,080:INFO:Set up data.
+2024-03-14 07:37:15,082:INFO:Set up index.
+2024-03-14 07:38:32,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:38:32,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:38:32,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:38:32,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:38:32,660:INFO:Initializing load_model()
+2024-03-14 07:38:32,660:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:38:33,177:INFO:Initializing predict_model()
+2024-03-14 07:38:33,177:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000024779D5CA10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000024779D5F250>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000024779DD5120>)
+2024-03-14 07:38:33,177:INFO:Checking exceptions
+2024-03-14 07:38:33,177:INFO:Preloading libraries
+2024-03-14 07:38:33,177:INFO:Set up data.
+2024-03-14 07:38:33,181:INFO:Set up index.
+2024-03-14 07:38:33,280:INFO:Initializing load_model()
+2024-03-14 07:38:33,280:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:38:33,296:INFO:Initializing predict_model()
+2024-03-14 07:38:33,296:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002477D08EE50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000002477D097190>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002477CC2CCC0>)
+2024-03-14 07:38:33,296:INFO:Checking exceptions
+2024-03-14 07:38:33,296:INFO:Preloading libraries
+2024-03-14 07:38:33,296:INFO:Set up data.
+2024-03-14 07:38:33,298:INFO:Set up index.
+2024-03-14 07:38:54,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:38:54,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:38:54,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:38:54,503:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:38:54,797:INFO:Initializing load_model()
+2024-03-14 07:38:54,797:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:38:55,308:INFO:Initializing predict_model()
+2024-03-14 07:38:55,308:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000234428927D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000023441F6F8D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000234426D6E80>)
+2024-03-14 07:38:55,309:INFO:Checking exceptions
+2024-03-14 07:38:55,309:INFO:Preloading libraries
+2024-03-14 07:38:55,309:INFO:Set up data.
+2024-03-14 07:38:55,312:INFO:Set up index.
+2024-03-14 07:38:55,414:INFO:Initializing load_model()
+2024-03-14 07:38:55,414:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:38:55,431:INFO:Initializing predict_model()
+2024-03-14 07:38:55,431:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023445789A90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000002344579AF50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023445354CC0>)
+2024-03-14 07:38:55,431:INFO:Checking exceptions
+2024-03-14 07:38:55,431:INFO:Preloading libraries
+2024-03-14 07:38:55,431:INFO:Set up data.
+2024-03-14 07:38:55,433:INFO:Set up index.
+2024-03-14 07:40:45,926:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:40:45,927:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:40:45,927:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:40:45,927:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:40:46,265:INFO:Initializing load_model()
+2024-03-14 07:40:46,265:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:40:46,796:INFO:Initializing predict_model()
+2024-03-14 07:40:46,796:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002BBBC087C10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000002BBB90F0390>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002BBFF293A60>)
+2024-03-14 07:40:46,796:INFO:Checking exceptions
+2024-03-14 07:40:46,796:INFO:Preloading libraries
+2024-03-14 07:40:46,797:INFO:Set up data.
+2024-03-14 07:40:46,799:INFO:Set up index.
+2024-03-14 07:40:46,908:INFO:Initializing load_model()
+2024-03-14 07:40:46,908:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:40:46,927:INFO:Initializing predict_model()
+2024-03-14 07:40:46,927:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002BBBC08DDD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000002BBBC094050>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002BBBBC40CC0>)
+2024-03-14 07:40:46,927:INFO:Checking exceptions
+2024-03-14 07:40:46,927:INFO:Preloading libraries
+2024-03-14 07:40:46,927:INFO:Set up data.
+2024-03-14 07:40:46,931:INFO:Set up index.
+2024-03-14 07:42:13,262:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:42:13,262:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:42:13,262:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:42:13,262:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:42:13,628:INFO:Initializing load_model()
+2024-03-14 07:42:13,628:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:42:14,159:INFO:Initializing predict_model()
+2024-03-14 07:42:14,159:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000013B201D09D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000013B204ED4D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000013B201D4360>)
+2024-03-14 07:42:14,160:INFO:Checking exceptions
+2024-03-14 07:42:14,160:INFO:Preloading libraries
+2024-03-14 07:42:14,160:INFO:Set up data.
+2024-03-14 07:42:14,163:INFO:Set up index.
+2024-03-14 07:42:14,305:INFO:Initializing load_model()
+2024-03-14 07:42:14,305:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:42:14,324:INFO:Initializing predict_model()
+2024-03-14 07:42:14,324:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000013B2348E810>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000013B23486A10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000013B2321CC20>)
+2024-03-14 07:42:14,324:INFO:Checking exceptions
+2024-03-14 07:42:14,324:INFO:Preloading libraries
+2024-03-14 07:42:14,325:INFO:Set up data.
+2024-03-14 07:42:14,327:INFO:Set up index.
+2024-03-14 07:43:56,393:INFO:Initializing load_model()
+2024-03-14 07:43:56,395:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:43:56,471:INFO:Initializing predict_model()
+2024-03-14 07:43:56,471:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000013B23487FD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000013B23485390>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000013B23552840>)
+2024-03-14 07:43:56,471:INFO:Checking exceptions
+2024-03-14 07:43:56,471:INFO:Preloading libraries
+2024-03-14 07:43:56,471:INFO:Set up data.
+2024-03-14 07:43:56,473:INFO:Set up index.
+2024-03-14 07:43:56,587:INFO:Initializing load_model()
+2024-03-14 07:43:56,587:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:43:56,604:INFO:Initializing predict_model()
+2024-03-14 07:43:56,604:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000013B2348A310>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000013B201E7210>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000013B2351BC40>)
+2024-03-14 07:43:56,604:INFO:Checking exceptions
+2024-03-14 07:43:56,604:INFO:Preloading libraries
+2024-03-14 07:43:56,604:INFO:Set up data.
+2024-03-14 07:43:56,606:INFO:Set up index.
+2024-03-14 07:44:49,357:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:44:49,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:44:49,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:44:49,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:44:49,623:INFO:Initializing load_model()
+2024-03-14 07:44:49,623:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:44:50,123:INFO:Initializing predict_model()
+2024-03-14 07:44:50,123:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000131F689E550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000131F67942D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000131F66D4F40>)
+2024-03-14 07:44:50,123:INFO:Checking exceptions
+2024-03-14 07:44:50,123:INFO:Preloading libraries
+2024-03-14 07:44:50,124:INFO:Set up data.
+2024-03-14 07:44:50,126:INFO:Set up index.
+2024-03-14 07:44:50,233:INFO:Initializing load_model()
+2024-03-14 07:44:50,233:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:44:50,250:INFO:Initializing predict_model()
+2024-03-14 07:44:50,250:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000131F9799C50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000131F9795750>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000131F9388AE0>)
+2024-03-14 07:44:50,251:INFO:Checking exceptions
+2024-03-14 07:44:50,251:INFO:Preloading libraries
+2024-03-14 07:44:50,251:INFO:Set up data.
+2024-03-14 07:44:50,253:INFO:Set up index.
+2024-03-14 07:45:58,539:INFO:Initializing load_model()
+2024-03-14 07:45:58,540:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:45:58,594:INFO:Initializing predict_model()
+2024-03-14 07:45:58,594:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000131F5F99B90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000131F97A4790>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000131F987EFC0>)
+2024-03-14 07:45:58,594:INFO:Checking exceptions
+2024-03-14 07:45:58,594:INFO:Preloading libraries
+2024-03-14 07:45:58,594:INFO:Set up data.
+2024-03-14 07:45:58,596:INFO:Set up index.
+2024-03-14 07:45:58,700:INFO:Initializing load_model()
+2024-03-14 07:45:58,700:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:45:58,717:INFO:Initializing predict_model()
+2024-03-14 07:45:58,717:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000131F981F450>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000131F84F1BD0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000131F973ADE0>)
+2024-03-14 07:45:58,718:INFO:Checking exceptions
+2024-03-14 07:45:58,718:INFO:Preloading libraries
+2024-03-14 07:45:58,718:INFO:Set up data.
+2024-03-14 07:45:58,720:INFO:Set up index.
+2024-03-14 07:46:29,626:INFO:Initializing load_model()
+2024-03-14 07:46:29,626:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:46:29,680:INFO:Initializing predict_model()
+2024-03-14 07:46:29,680:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000131F689DD90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000131F689E0D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000131F9871260>)
+2024-03-14 07:46:29,680:INFO:Checking exceptions
+2024-03-14 07:46:29,680:INFO:Preloading libraries
+2024-03-14 07:46:29,681:INFO:Set up data.
+2024-03-14 07:46:29,684:INFO:Set up index.
+2024-03-14 07:46:29,794:INFO:Initializing load_model()
+2024-03-14 07:46:29,794:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:46:29,810:INFO:Initializing predict_model()
+2024-03-14 07:46:29,810:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000131F689C790>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000131F982B5D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000131F66D4680>)
+2024-03-14 07:46:29,810:INFO:Checking exceptions
+2024-03-14 07:46:29,810:INFO:Preloading libraries
+2024-03-14 07:46:29,810:INFO:Set up data.
+2024-03-14 07:46:29,813:INFO:Set up index.
+2024-03-14 07:49:34,992:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:34,992:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:34,993:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:34,993:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:35,328:INFO:Initializing load_model()
+2024-03-14 07:49:35,328:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:49:35,901:INFO:Initializing predict_model()
+2024-03-14 07:49:35,901:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001E0B6FE3690>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001E0B6FE3B50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001E0B6ED2C00>)
+2024-03-14 07:49:35,901:INFO:Checking exceptions
+2024-03-14 07:49:35,901:INFO:Preloading libraries
+2024-03-14 07:49:35,901:INFO:Set up data.
+2024-03-14 07:49:35,905:INFO:Set up index.
+2024-03-14 07:49:36,021:INFO:Initializing load_model()
+2024-03-14 07:49:36,021:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:49:36,038:INFO:Initializing predict_model()
+2024-03-14 07:49:36,038:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001E0BA002890>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001E0B9FF8710>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001E0B9BA13A0>)
+2024-03-14 07:49:36,038:INFO:Checking exceptions
+2024-03-14 07:49:36,038:INFO:Preloading libraries
+2024-03-14 07:49:36,038:INFO:Set up data.
+2024-03-14 07:49:36,040:INFO:Set up index.
+2024-03-14 07:49:39,664:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:39,664:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:39,664:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:39,664:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:41,387:INFO:Initializing load_model()
+2024-03-14 07:49:41,388:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:49:41,897:INFO:Initializing predict_model()
+2024-03-14 07:49:41,897:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001455B09D150>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001455B8BFF50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001455B8D72E0>)
+2024-03-14 07:49:41,897:INFO:Checking exceptions
+2024-03-14 07:49:41,897:INFO:Preloading libraries
+2024-03-14 07:49:41,897:INFO:Set up data.
+2024-03-14 07:49:41,900:INFO:Set up index.
+2024-03-14 07:49:42,001:INFO:Initializing load_model()
+2024-03-14 07:49:42,001:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:49:42,017:INFO:Initializing predict_model()
+2024-03-14 07:49:42,017:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001455E9DC1D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001455E9F0690>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001455E489300>)
+2024-03-14 07:49:42,017:INFO:Checking exceptions
+2024-03-14 07:49:42,017:INFO:Preloading libraries
+2024-03-14 07:49:42,018:INFO:Set up data.
+2024-03-14 07:49:42,021:INFO:Set up index.
+2024-03-14 07:49:59,647:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:59,647:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:59,647:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:49:59,647:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:50:02,358:INFO:Initializing load_model()
+2024-03-14 07:50:02,358:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:50:02,902:INFO:Initializing predict_model()
+2024-03-14 07:50:02,902:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A85845E250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001A8588DF4D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A8585D7100>)
+2024-03-14 07:50:02,902:INFO:Checking exceptions
+2024-03-14 07:50:02,902:INFO:Preloading libraries
+2024-03-14 07:50:02,902:INFO:Set up data.
+2024-03-14 07:50:02,904:INFO:Set up index.
+2024-03-14 07:50:03,020:INFO:Initializing load_model()
+2024-03-14 07:50:03,020:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:50:03,048:INFO:Initializing predict_model()
+2024-03-14 07:50:03,049:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A85B8EB6D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001A85B8F7850>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A85B475300>)
+2024-03-14 07:50:03,049:INFO:Checking exceptions
+2024-03-14 07:50:03,049:INFO:Preloading libraries
+2024-03-14 07:50:03,049:INFO:Set up data.
+2024-03-14 07:50:03,053:INFO:Set up index.
+2024-03-14 07:53:06,594:INFO:Initializing load_model()
+2024-03-14 07:53:06,595:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:53:06,644:INFO:Initializing predict_model()
+2024-03-14 07:53:06,644:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A85B8E7890>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001A85B8E3C10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A85B9D5620>)
+2024-03-14 07:53:06,644:INFO:Checking exceptions
+2024-03-14 07:53:06,644:INFO:Preloading libraries
+2024-03-14 07:53:06,645:INFO:Set up data.
+2024-03-14 07:53:06,647:INFO:Set up index.
+2024-03-14 07:53:06,761:INFO:Initializing load_model()
+2024-03-14 07:53:06,761:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:53:06,776:INFO:Initializing predict_model()
+2024-03-14 07:53:06,776:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001A858848F50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001A858C74590>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001A85B9B6660>)
+2024-03-14 07:53:06,776:INFO:Checking exceptions
+2024-03-14 07:53:06,776:INFO:Preloading libraries
+2024-03-14 07:53:06,776:INFO:Set up data.
+2024-03-14 07:53:06,778:INFO:Set up index.
+2024-03-14 07:55:21,018:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:55:21,018:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:55:21,018:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:55:21,018:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:55:21,322:INFO:Initializing load_model()
+2024-03-14 07:55:21,323:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:55:21,824:INFO:Initializing predict_model()
+2024-03-14 07:55:21,825:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000171061531D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001710645AC50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000171061D4720>)
+2024-03-14 07:55:21,825:INFO:Checking exceptions
+2024-03-14 07:55:21,825:INFO:Preloading libraries
+2024-03-14 07:55:21,825:INFO:Set up data.
+2024-03-14 07:55:21,828:INFO:Set up index.
+2024-03-14 07:55:21,931:INFO:Initializing load_model()
+2024-03-14 07:55:21,931:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:55:21,947:INFO:Initializing predict_model()
+2024-03-14 07:55:21,947:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001710948D690>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001710949B750>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000017109074CC0>)
+2024-03-14 07:55:21,947:INFO:Checking exceptions
+2024-03-14 07:55:21,947:INFO:Preloading libraries
+2024-03-14 07:55:21,947:INFO:Set up data.
+2024-03-14 07:55:21,949:INFO:Set up index.
+2024-03-14 07:55:33,401:INFO:Initializing load_model()
+2024-03-14 07:55:33,401:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:55:33,493:INFO:Initializing predict_model()
+2024-03-14 07:55:33,493:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000171068D39D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000171060F5390>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001710956F6A0>)
+2024-03-14 07:55:33,493:INFO:Checking exceptions
+2024-03-14 07:55:33,493:INFO:Preloading libraries
+2024-03-14 07:55:33,493:INFO:Set up data.
+2024-03-14 07:55:33,496:INFO:Set up index.
+2024-03-14 07:55:33,648:INFO:Initializing load_model()
+2024-03-14 07:55:33,649:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:55:33,673:INFO:Initializing predict_model()
+2024-03-14 07:55:33,673:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000017106074A90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000017109490410>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000017109523E20>)
+2024-03-14 07:55:33,673:INFO:Checking exceptions
+2024-03-14 07:55:33,673:INFO:Preloading libraries
+2024-03-14 07:55:33,673:INFO:Set up data.
+2024-03-14 07:55:33,676:INFO:Set up index.
+2024-03-14 07:56:04,757:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:56:04,757:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:56:04,757:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:56:04,757:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:56:05,040:INFO:Initializing load_model()
+2024-03-14 07:56:05,042:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:56:05,544:INFO:Initializing predict_model()
+2024-03-14 07:56:05,544:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002B267480550>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000002B2644938D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002B2641D6660>)
+2024-03-14 07:56:05,544:INFO:Checking exceptions
+2024-03-14 07:56:05,544:INFO:Preloading libraries
+2024-03-14 07:56:05,544:INFO:Set up data.
+2024-03-14 07:56:05,546:INFO:Set up index.
+2024-03-14 07:56:05,649:INFO:Initializing load_model()
+2024-03-14 07:56:05,649:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:56:05,665:INFO:Initializing predict_model()
+2024-03-14 07:56:05,665:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000002B26748AA10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000002B26748CED0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002B267250AE0>)
+2024-03-14 07:56:05,665:INFO:Checking exceptions
+2024-03-14 07:56:05,665:INFO:Preloading libraries
+2024-03-14 07:56:05,665:INFO:Set up data.
+2024-03-14 07:56:05,667:INFO:Set up index.
+2024-03-14 07:56:15,986:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:56:15,987:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:56:15,987:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:56:15,987:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:56:16,321:INFO:Initializing load_model()
+2024-03-14 07:56:16,321:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:56:16,828:INFO:Initializing predict_model()
+2024-03-14 07:56:16,829:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000254F0534B10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000254F0453590>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000254F04D5DA0>)
+2024-03-14 07:56:16,829:INFO:Checking exceptions
+2024-03-14 07:56:16,829:INFO:Preloading libraries
+2024-03-14 07:56:16,829:INFO:Set up data.
+2024-03-14 07:56:16,831:INFO:Set up index.
+2024-03-14 07:56:16,932:INFO:Initializing load_model()
+2024-03-14 07:56:16,932:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:56:16,952:INFO:Initializing predict_model()
+2024-03-14 07:56:16,952:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000254F358E990>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000254F359B7D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000254F3164CC0>)
+2024-03-14 07:56:16,952:INFO:Checking exceptions
+2024-03-14 07:56:16,952:INFO:Preloading libraries
+2024-03-14 07:56:16,952:INFO:Set up data.
+2024-03-14 07:56:16,954:INFO:Set up index.
+2024-03-14 07:58:30,198:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:58:30,199:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:58:30,199:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:58:30,199:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:58:30,508:INFO:Initializing load_model()
+2024-03-14 07:58:30,508:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:58:31,049:INFO:Initializing predict_model()
+2024-03-14 07:58:31,049:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000018E0ECCEA90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000018E0EBC4B90>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018E0EAD4680>)
+2024-03-14 07:58:31,050:INFO:Checking exceptions
+2024-03-14 07:58:31,050:INFO:Preloading libraries
+2024-03-14 07:58:31,050:INFO:Set up data.
+2024-03-14 07:58:31,053:INFO:Set up index.
+2024-03-14 07:58:31,194:INFO:Initializing load_model()
+2024-03-14 07:58:31,194:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:58:31,213:INFO:Initializing predict_model()
+2024-03-14 07:58:31,213:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000018E11B947D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000018E11B8D390>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018E11750AE0>)
+2024-03-14 07:58:31,213:INFO:Checking exceptions
+2024-03-14 07:58:31,213:INFO:Preloading libraries
+2024-03-14 07:58:31,213:INFO:Set up data.
+2024-03-14 07:58:31,217:INFO:Set up index.
+2024-03-14 07:59:39,155:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:59:39,156:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:59:39,156:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:59:39,156:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 07:59:39,415:INFO:Initializing load_model()
+2024-03-14 07:59:39,415:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:59:39,903:INFO:Initializing predict_model()
+2024-03-14 07:59:39,903:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023836C7CF50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000023836CAD8D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000238369D6AC0>)
+2024-03-14 07:59:39,903:INFO:Checking exceptions
+2024-03-14 07:59:39,903:INFO:Preloading libraries
+2024-03-14 07:59:39,903:INFO:Set up data.
+2024-03-14 07:59:39,905:INFO:Set up index.
+2024-03-14 07:59:40,006:INFO:Initializing load_model()
+2024-03-14 07:59:40,006:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 07:59:40,022:INFO:Initializing predict_model()
+2024-03-14 07:59:40,022:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000023839CE6A50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000023839CF5B90>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000023839868AE0>)
+2024-03-14 07:59:40,022:INFO:Checking exceptions
+2024-03-14 07:59:40,022:INFO:Preloading libraries
+2024-03-14 07:59:40,022:INFO:Set up data.
+2024-03-14 07:59:40,024:INFO:Set up index.
+2024-03-14 08:02:23,599:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:02:23,599:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:02:23,600:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:02:23,600:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:02:53,291:INFO:Initializing load_model()
+2024-03-14 08:02:53,293:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 08:02:53,923:INFO:Initializing predict_model()
+2024-03-14 08:02:53,923:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020221212D90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000020220BE83D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020220BD6480>)
+2024-03-14 08:02:53,927:INFO:Checking exceptions
+2024-03-14 08:02:53,927:INFO:Preloading libraries
+2024-03-14 08:02:53,927:INFO:Set up data.
+2024-03-14 08:02:53,929:INFO:Set up index.
+2024-03-14 08:02:54,055:INFO:Initializing load_model()
+2024-03-14 08:02:54,055:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 08:02:54,069:INFO:Initializing predict_model()
+2024-03-14 08:02:54,069:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020223E89E10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000020223E90C90>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020223C427A0>)
+2024-03-14 08:02:54,069:INFO:Checking exceptions
+2024-03-14 08:02:54,069:INFO:Preloading libraries
+2024-03-14 08:02:54,069:INFO:Set up data.
+2024-03-14 08:02:54,076:INFO:Set up index.
+2024-03-14 08:03:02,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:03:02,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:03:02,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:03:02,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:03:02,683:INFO:Initializing load_model()
+2024-03-14 08:03:02,683:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 08:03:03,179:INFO:Initializing predict_model()
+2024-03-14 08:03:03,179:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000219F3717ED0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000219F33F3110>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000219F33D2AC0>)
+2024-03-14 08:03:03,179:INFO:Checking exceptions
+2024-03-14 08:03:03,179:INFO:Preloading libraries
+2024-03-14 08:03:03,179:INFO:Set up data.
+2024-03-14 08:03:03,179:INFO:Set up index.
+2024-03-14 08:03:03,304:INFO:Initializing load_model()
+2024-03-14 08:03:03,304:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 08:03:03,317:INFO:Initializing predict_model()
+2024-03-14 08:03:03,317:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000219F66D6D50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x00000219F66CC410>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000219F6270AE0>)
+2024-03-14 08:03:03,317:INFO:Checking exceptions
+2024-03-14 08:03:03,317:INFO:Preloading libraries
+2024-03-14 08:03:03,317:INFO:Set up data.
+2024-03-14 08:03:03,325:INFO:Set up index.
+2024-03-14 08:04:06,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:04:06,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:04:06,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:04:06,480:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:04:06,796:INFO:Initializing load_model()
+2024-03-14 08:04:06,796:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 08:04:07,305:INFO:Initializing predict_model()
+2024-03-14 08:04:07,305:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001F36660DE90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001F3662D13D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001F3662CEA20>)
+2024-03-14 08:04:07,305:INFO:Checking exceptions
+2024-03-14 08:04:07,305:INFO:Preloading libraries
+2024-03-14 08:04:07,305:INFO:Set up data.
+2024-03-14 08:04:07,308:INFO:Set up index.
+2024-03-14 08:04:07,424:INFO:Initializing load_model()
+2024-03-14 08:04:07,424:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 08:04:07,446:INFO:Initializing predict_model()
+2024-03-14 08:04:07,446:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001F36938FA10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001F3693843D0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001F368E60AE0>)
+2024-03-14 08:04:07,446:INFO:Checking exceptions
+2024-03-14 08:04:07,446:INFO:Preloading libraries
+2024-03-14 08:04:07,446:INFO:Set up data.
+2024-03-14 08:04:07,449:INFO:Set up index.
+2024-03-14 08:05:02,649:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:05:02,649:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:05:02,649:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:05:02,649:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 08:05:02,918:INFO:Initializing load_model()
+2024-03-14 08:05:02,919:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 08:05:03,427:INFO:Initializing predict_model()
+2024-03-14 08:05:03,427:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA23319FD0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001AA23242A10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001AA22ED28E0>)
+2024-03-14 08:05:03,427:INFO:Checking exceptions
+2024-03-14 08:05:03,427:INFO:Preloading libraries
+2024-03-14 08:05:03,427:INFO:Set up data.
+2024-03-14 08:05:03,429:INFO:Set up index.
+2024-03-14 08:05:03,533:INFO:Initializing load_model()
+2024-03-14 08:05:03,533:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 08:05:03,549:INFO:Initializing predict_model()
+2024-03-14 08:05:03,549:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA25FD6E90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001AA25FCCAD0>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001AA25D74AE0>)
+2024-03-14 08:05:03,549:INFO:Checking exceptions
+2024-03-14 08:05:03,549:INFO:Preloading libraries
+2024-03-14 08:05:03,549:INFO:Set up data.
+2024-03-14 08:05:03,551:INFO:Set up index.
+2024-03-14 09:05:02,968:INFO:Initializing load_model()
+2024-03-14 09:05:02,968:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 09:05:03,034:INFO:Initializing predict_model()
+2024-03-14 09:05:03,034:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA23224410>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001AA25FC4F50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001AA262ADDA0>)
+2024-03-14 09:05:03,034:INFO:Checking exceptions
+2024-03-14 09:05:03,034:INFO:Preloading libraries
+2024-03-14 09:05:03,034:INFO:Set up data.
+2024-03-14 09:05:03,037:INFO:Set up index.
+2024-03-14 09:05:03,190:INFO:Initializing load_model()
+2024-03-14 09:05:03,191:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 09:05:03,220:INFO:Initializing predict_model()
+2024-03-14 09:05:03,220:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AA23278690>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x000001AA25FCD450>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001AA26253E20>)
+2024-03-14 09:05:03,220:INFO:Checking exceptions
+2024-03-14 09:05:03,220:INFO:Preloading libraries
+2024-03-14 09:05:03,220:INFO:Set up data.
+2024-03-14 09:05:03,224:INFO:Set up index.
+2024-03-14 09:13:15,117:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 09:13:15,118:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 09:13:15,118:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 09:13:15,118:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 09:13:15,568:INFO:Initializing load_model()
+2024-03-14 09:13:15,568:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 09:13:16,144:INFO:Initializing predict_model()
+2024-03-14 09:13:16,144:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020B4C750510>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000020B4BF95E10>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020B4C6CE0C0>)
+2024-03-14 09:13:16,145:INFO:Checking exceptions
+2024-03-14 09:13:16,145:INFO:Preloading libraries
+2024-03-14 09:13:16,145:INFO:Set up data.
+2024-03-14 09:13:16,147:INFO:Set up index.
+2024-03-14 09:13:16,243:INFO:Initializing load_model()
+2024-03-14 09:13:16,244:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 09:13:16,264:INFO:Initializing predict_model()
+2024-03-14 09:13:16,264:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000020B4F786210>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000020B4F78E710>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000020B4F31CAE0>)
+2024-03-14 09:13:16,264:INFO:Checking exceptions
+2024-03-14 09:13:16,264:INFO:Preloading libraries
+2024-03-14 09:13:16,264:INFO:Set up data.
+2024-03-14 09:13:16,266:INFO:Set up index.
+2024-03-14 09:13:20,076:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 09:13:20,076:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 09:13:20,076:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 09:13:20,076:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 09:13:20,430:INFO:Initializing load_model()
+2024-03-14 09:13:20,431:INFO:load_model(model_name=PM25_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 09:13:21,013:INFO:Initializing predict_model()
+2024-03-14 09:13:21,013:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028DF515F290>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['PM10', 'O3', 'CO', 'NO2', 'SO2',
+                                             'WS', 'TEMP', 'RH', 'WD'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000028DF5075810>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028DF4FD45E0>)
+2024-03-14 09:13:21,014:INFO:Checking exceptions
+2024-03-14 09:13:21,014:INFO:Preloading libraries
+2024-03-14 09:13:21,014:INFO:Set up data.
+2024-03-14 09:13:21,016:INFO:Set up index.
+2024-03-14 09:13:21,123:INFO:Initializing load_model()
+2024-03-14 09:13:21,123:INFO:load_model(model_name=WD_catboost_pipeline, platform=None, authentication=None, verbose=True)
+2024-03-14 09:13:21,147:INFO:Initializing predict_model()
+2024-03-14 09:13:21,147:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000028DF828EB90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['DATETIMEDATA'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['WS', 'TEMP', 'RH'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 BaggingRegressor(estimator=<catboost.core.CatBoostRegressor object at 0x0000028DF8285E50>,
+                                  n_estimators=20, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000028DF7E18C20>)
+2024-03-14 09:13:21,147:INFO:Checking exceptions
+2024-03-14 09:13:21,147:INFO:Preloading libraries
+2024-03-14 09:13:21,147:INFO:Set up data.
+2024-03-14 09:13:21,150:INFO:Set up index.
