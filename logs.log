@@ -13591,3 +13591,11 @@ pickle: {'deps_info': {'pip': '24.0', 'setuptools': '65.5.0', 'pycaret': '3.3.0'
 2024-03-14 10:14:44,872:INFO:Preloading libraries
 2024-03-14 10:14:44,872:INFO:Set up data.
 2024-03-14 10:14:44,878:INFO:Set up index.
+2024-03-14 10:22:31,630:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 10:22:31,630:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 10:22:31,630:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-03-14 10:22:31,630:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
