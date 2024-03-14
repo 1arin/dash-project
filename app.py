@@ -35,7 +35,7 @@ app.layout = html.Div(
                     children="Nakhon Si Thammarat Air Quality Forecasting", className="header-title"
                 ),
                 html.P(
-                    children="Analysis and Prediction from Air4thai",
+                    children="Data base on Air4thai",
                     className="header-description",
                 ),
             ],
