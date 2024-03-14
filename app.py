@@ -11,9 +11,11 @@ from pycaret.regression import predict_model, load_model
 data = pd.read_csv("clean_data.csv")
 data["DATETIMEDATA"] = pd.to_datetime(data["DATETIMEDATA"], format="%Y-%m-%d %H:%M:%S")
 data.sort_values("DATETIMEDATA", inplace=True)
+
+
 order = ['PM25','PM10','O3','CO','NO2','SO2','WS','TEMP','RH','WD']
 
-PAGE_SIZE = 5
+PAGE_SIZE = 7
 
 external_stylesheets = [
     {
@@ -48,8 +50,8 @@ app.layout = html.Div(
                         dcc.Dropdown(
                             id="parameter-filter",
                             options=[
-                                {"label": param, "value": param}
-                                for param in ['PM25','PM10','O3','CO','NO2','SO2','WS','TEMP','RH','WD']
+                                {"label": parameter, "value": parameter}
+                                for parameter in ['PM25','PM10','O3','CO','NO2','SO2','WS','TEMP','RH','WD']
                             ],
                             value="PM25",
                             clearable=False,
