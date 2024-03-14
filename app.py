@@ -61,7 +61,7 @@ app.layout = html.Div(
                 html.Div(
                     children=[
                         html.Div(
-                            children="Date Range",
+                            children="Duration",
                             className="menu-title"
                             ),
                         dcc.DatePickerRange(
@@ -70,7 +70,7 @@ app.layout = html.Div(
                             max_date_allowed=data["DATETIMEDATA"].max().date(),
                             start_date=data["DATETIMEDATA"].min().date(),
                             end_date=data["DATETIMEDATA"].max().date(),
-                            display_format='YYYY-MM-DD',
+                            display_format='DD-MM-YYYY',
                         ),
                     ]
                 ),
