@@ -329,7 +329,7 @@ def update_chart(n_intervals):
 
     return PM_chart,WD_chart
 
-# call back part
+
 @app.callback(
     Output("prediction_pm", "data"),
     Output("prediction_wd", "data"),
