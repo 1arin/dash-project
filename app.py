@@ -292,18 +292,18 @@ def update_chart(n_intervals):
                 "x": future_dates_WD,
                 "y": predictions_WD['prediction_label'].round(2),
                 "type": "lines",
-                'name': 'PM25 Forecast',
+                'name': 'WD Forecast',
                 "hovertemplate": "%{y:.2f}<extra></extra>",
             },
         ],
         'layout': {
             'title': { 
-                'text' : f'PM25 Forecast for Next 7 Days',
+                'text' : f'WD Forecast for Next 7 Days',
                 "x": 0.05,
                 "xanchor": "left",
             },
             'xaxis': {'title': 'Date', "fixedrange": True},
-            'yaxis': {'title': 'PM25 Forecast', "fixedrange": True},
+            'yaxis': {'title': 'WD Forecast', "fixedrange": True},
             "colorway": ["#B5C0D0"],
         },
     }
