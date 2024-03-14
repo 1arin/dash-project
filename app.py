@@ -24,7 +24,7 @@ external_stylesheets = [
 ]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-app.title = "PM 2.5 Forecasting"
+app.title = "Air Quality Forecast"
 
 app.layout = html.Div(
     children=[
@@ -32,7 +32,7 @@ app.layout = html.Div(
             children=[
                 html.P(children="💨", className="header-emoji"),
                 html.H1(
-                    children="Air4thai Nakorn-Sri", className="header-title"
+                    children="Nakhon Si Thammarat Air Quality Forecasting", className="header-title"
                 ),
                 html.P(
                     children="Analysis and Prediction from Air4thai",
