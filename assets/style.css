@@ -1,6 +1,7 @@
 /* Reset and global styles */
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Hagrid Trial', sans-serif;
+    font-family: 'Hagrid Text Trial', sans-serif;
     margin: 0;
     background-color: #F7F7F7;
 }
@@ -10,6 +11,7 @@ body {
     background-color: #222222;
     height: 288px;
     padding: 16px 0 0 0;
+    text-align: center;
 }
 
 .header-emoji {
