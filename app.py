@@ -95,7 +95,7 @@ app.layout = html.Div(
                             page_size=PAGE_SIZE,
                             page_action="custom",
                             style_cell={"textAlign": "center"},
-                            style_header={"backgroundColor": " rgb(174, 180, 196)"},
+                            style_header={"backgroundColor": "#343F56"},
                             style_cell_conditional=[
                                 {"if": {"column_id": c}, "textAlign": "center"}
                                 for c in order
@@ -118,7 +118,7 @@ app.layout = html.Div(
                             id="prediction_pm",  # Clear and informative ID
                             columns=[{"name": i, "id": i} for i in ["DATETIMEDATA", "prediction_label"]],
                             style_cell={"textAlign": "center"},
-                            style_header={"backgroundColor": " rgb(174, 180, 196)"},
+                            style_header={"backgroundColor": "#343F56"},
                             style_cell_conditional=[
                                 {"if": {"column_id": c}, "textAlign": "center"}
                                 for c in ["Date", "Region"]
@@ -141,7 +141,7 @@ app.layout = html.Div(
                             id="prediction_wd",  # Clear and informative ID
                             columns=[{"name": i, "id": i} for i in ["DATETIMEDATA", "prediction_label"]],
                             style_cell={"textAlign": "center"},
-                            style_header={"backgroundColor": " rgb(174, 180, 196)"},
+                            style_header={"backgroundColor": "#343F56", },
                             style_cell_conditional=[
                                 {"if": {"column_id": c}, "textAlign": "center"}
                                 for c in ["Date", "Region"]

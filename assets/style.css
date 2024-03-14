@@ -48,6 +48,7 @@ body {
 .card {
     margin-bottom: 24px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+    color: #F5E6CA;
 }
 
 /* Menu styles */
@@ -60,6 +61,7 @@ body {
     margin: -80px auto 0 auto;
     background-color: #FFFBF4;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
 }
 
 .menu-title {
@@ -85,12 +87,15 @@ body {
 
 /* Header table styles */
 .header-table {
-    color: #F5E6CA;
+
     display: flex;
     justify-content: center;
 }
 
 .colored-background {
    background-color: #343F56;
-   color: #F5E6CA;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td .dash-cell-value.unfocused {
+    color: black;
 }
