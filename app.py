@@ -74,22 +74,6 @@ app.layout = html.Div(
                         ),
                     ]
                 ),
-                html.Div(
-                    children=[
-                        html.Div(children="Location", className="menu-title"),
-                        dcc.Dropdown(
-                            id="location",
-                            options=[
-                                {"label": Location, "value": Location}
-                                for Location in ['NST']
-                            ],
-                            value="NST",
-                            clearable=False,
-                            searchable=False,
-                            className="dropdown",
-                    ),
-                ]
-            ),
             ],
             className="menu",
         ),
